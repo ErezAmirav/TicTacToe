@@ -48,7 +48,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-
     @Override
     public void onClick(View v) {
         if (!((Button) v).getText().toString().equals("")) {
@@ -118,18 +117,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         turnP1 = true;
     }
     private void updatePointText() {
-        textViewP1.setText("Player1 :" + pointP1);
-        textViewP2.setText("Player2 :" + pointP2);
+        textViewP1.setText("Player 1: " + pointP1);
+        textViewP2.setText("Player 2: " + pointP2);
 
     }
     private void resetG(){
         pointP1 = 0;
-        pointP2 =0;
+        pointP2 = 0;
         updatePointText();
         resetGame();
     }
-
-
-
-
 }
